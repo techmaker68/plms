@@ -1,0 +1,70 @@
+.dashboard {
+  .graph {
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $secondary;
+      padding: 0;
+      border: 0.1rem solid $border-color;
+      h6 {
+        font-size: 1.4rem;
+        padding-inline-start: 2rem;
+        margin-block-end: 0;
+      }
+      .counts {
+        font-size: 3rem;
+        font-weight: 500;
+        color: $primary;
+        background-color: rgba($primary, 0.05);
+        padding: 1.5rem 2rem;
+      }
+    }
+  }
+  .dashboard-list {
+    margin-block-start: 3rem;
+    .dash-title {
+      display: flex;
+      border-block-end: 0.1rem solid $border-color;
+      font-size: 1.6rem;
+      color: $secondary;
+      margin-block-end: 1rem;
+      span {
+        margin-block-end: 0.5rem;
+        max-width: 1.5rem;
+        margin-inline-end: 1rem;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    ul {
+      margin-block-start: 1rem;
+    }
+  }
+  .dashboard-tiles {
+    .iconclass {
+      font-size: 3rem;
+      .path1,
+      .path2,
+      .path3,
+      .path4,
+      .path5,
+      .path6,
+      .path7 {
+        font-size: 3rem;
+      }
+    }
+  }
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.dashboard-main {
+  @media (max-width: 1400px) {
+    font-size: 2.5rem !important;
+  }
+}

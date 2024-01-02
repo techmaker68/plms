@@ -1,0 +1,250 @@
+.loi-req {
+  #myTabContent {
+    margin-block-start: -1px;
+  }
+  label {
+    &.text-primary {
+      font-weight: 500;
+    }
+  }
+  tr {
+    cursor: pointer;
+  }
+  .batch-list {
+    label {
+      width: 40%;
+      font-size: 1.3rem;
+    }
+    strong {
+      font-weight: 700;
+    }
+  }
+  .pdfDocView {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    background: white;
+    padding: 40px;
+  }
+
+  .loi-doc-save-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-block-end: 1rem;
+
+    button {
+      align-self: flex-end;
+    }
+  }
+
+  .loi-form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .loi-form-col {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+  }
+}
+
+.loimaincontent {
+  margin: 2rem 0;
+  table {
+    th {
+      padding-inline-start: 0.5em;
+    }
+  }
+  .filterList {
+    padding-inline-start: 1.2rem;
+    line-height: 1.8rem;
+    .form-check-label {
+      color: $text-color;
+    }
+  }
+}
+
+.no-borders-form {
+  .form-control:not(textarea),
+  .form-select {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: rgba($primary, 0.5);
+    }
+    border-radius: 0 !important;
+    border: none;
+    border-block-end: 0.1rem solid $border-color;
+    padding-inline-start: 0;
+    position: relative;
+    transition: ease-in all 0.3s;
+    background-color: transparent;
+    &[type="file"] {
+      padding-inline-start: 0.5rem;
+    }
+  }
+}
+
+.Addpassport {
+  .timeline--vertical {
+    h6 {
+      font-size: 12px;
+      font-weight: 600;
+      color: #000000;
+      margin: 0;
+    }
+    label {
+      color: $text-color;
+      font-weight: 400;
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+    .row {
+      .form-control {
+        padding-inline-start: 0;
+      }
+    }
+  }
+  .row {
+    margin-block-end: 1.5rem;
+    .form-label {
+      display: block;
+      width: 100%;
+    }
+  }
+  .edit {
+    width: 2rem;
+    display: inline-block;
+    position: absolute;
+    right: 2.5rem;
+    top: 1.5rem;
+    cursor: pointer;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+.letter-view {
+  width: 790px;
+  min-height: 900px;
+  @media (max-width: 1400px) {
+    width: 690px;
+  }
+}
+.plms-card {
+  .label-value {
+    padding: 0 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-block-end: 0.1rem solid $border-color;
+    margin: 0 0 1.5rem 0;
+    &:last-child {
+      border: none;
+    }
+    li {
+      width: 50%;
+    }
+  }
+  margin: 0 auto;
+  table {
+    tr {
+      pointer-events: none;
+    }
+  }
+}
+.applicantListHtml {
+  .icon-attachment {
+    font-size: 0.8rem;
+  }
+}
+
+h6 {
+  &.timeline-title {
+    margin-block-start: 1rem;
+    color: $primary;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    margin-block-end: 1.5rem;
+    font-weight: 600;
+    line-height: 16px;
+  }
+}
+.LOIApplicationMain {
+  .applicantHeader {
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      position: relative;
+      margin: 1rem 0;
+      padding: 0 0 2rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::before {
+        width: 40%;
+        height: 0.1rem;
+        background: #0f1f78;
+        position: absolute;
+        content: "";
+        inset-inline-start: 0;
+        bottom: 0;
+      }
+      &::after {
+        width: calc(60% - 2px);
+        height: 0.1rem;
+        background: #c41030;
+        position: absolute;
+        content: "";
+        inset-inline-start: calc(40% + 2px);
+        bottom: 0;
+      }
+    }
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    margin-block-end: 3rem;
+    border-block-end: 1px solid #e0e0e0;
+    padding-block-end: 1rem;
+    .main-ul {
+      padding: 15px;
+      // padding: 0 1.5rem 0 0;
+      margin: 0;
+      > li {
+        width: calc(50% - 1rem);
+        margin: 0 1rem 1rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+        label {
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: 15rem;
+        }
+        strong {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}
+
+.highlight {
+  background-color: #ffff00;
+  font-weight: 500;
+}

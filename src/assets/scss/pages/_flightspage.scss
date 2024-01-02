@@ -1,0 +1,31 @@
+.flightsPage {
+  &__label-value {
+    display: flex;
+    padding-inline-start: 0;
+    margin: 3rem 0;
+    li {
+      width: 17%;
+      display: flex;
+      align-items: center;
+      + li {
+        margin-inline-start: 3rem;
+      }
+    }
+  }
+}
+.flightImportData {
+  .label-value {
+    &.downloadTemplate {
+      margin-inline-start: 7rem;
+      label,
+      a {
+        font-size: 1rem;
+      }
+      label {
+        width: 50%;
+        white-space: nowrap;
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+// We specify all rtl specific styles
+/*!rtl:begin:ignore*/
+.rtl-app-container {
+  .vue3-easy-data-table__body {
+    .direction-left {
+      text-align: start !important;
+    }
+
+    .direction-right {
+      text-align: end !important;
+    }
+  }
+
+  .vue3-easy-data-table__footer {
+    .previous-page__click-button,
+    .next-page__click-button {
+      transform: rotate(0.5turn);
+    }
+  }
+
+  .navbar {
+    &:before {
+      transform: scaleX(-1);
+    }
+  }
+
+  .btn-icon {
+    [class^="icon-"],
+    [class*=" icon-"] {
+      direction: ltr !important;
+    }
+  }
+
+  .me-2 {
+    margin-left: 0px;
+    margin-inline-start: 0.5rem !important;
+  }
+}
+
+[type="tel"],
+[type="url"],
+[type="email"],
+[type="number"] {
+  direction: unset;
+}
+
+.Vue-Toastification__container {
+  direction: ltr;
+}
+
+.custom-editor {
+  direction: ltr;
+}
+/*!rtl:begin:ignore*/

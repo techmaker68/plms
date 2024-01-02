@@ -1,0 +1,202 @@
+input[type="number"].hide-spinner {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+}
+
+.form-control,
+.form-select,
+.p-multiselect-label {
+  font-size: 1.2rem;
+}
+
+.form-control,
+.form-select {
+  border-color: $border-color;
+  color: $text-color;
+}
+input[type="date"]:invalid::-webkit-datetime-edit,
+option:first-of-type,
+select:required:invalid {
+  color: $secondary;
+}
+.form-control[disabled] {
+  background-color: transparent;
+  // border-block-end: transparent !important;
+}
+.form-check-inline {
+  gap: 0.5rem;
+  /*rtl:ignore*/
+  margin-right: 0px;
+}
+
+.form-floating {
+  .form-control,
+  .form-control-plaintext,
+  .form-select {
+    height: calc(4.5rem + 2px);
+    border: none;
+    border-radius: 0;
+    border-block-end: 0.1rem solid $border-color;
+    padding-inline-start: 0;
+  }
+  > label {
+    padding: 1.2rem 0rem;
+  }
+  > .form-control:focus ~ label,
+  > .form-control:not(:placeholder-shown) ~ label,
+  > .form-control-plaintext ~ label,
+  > .form-select ~ label {
+    transform: scale(0.85) translateY(-0.7rem) translateX(0rem);
+  }
+  .form-control {
+    &:focus {
+      box-shadow: none;
+      border-color: $primary;
+    }
+  }
+}
+.form-check-input {
+  $size: 1.5rem;
+  min-width: $size;
+  min-height: $size;
+  width: $size;
+  height: $size;
+  margin-block-start: 0;
+  border-radius: 0;
+  float: inline-start;
+  margin-block-start: 0.15rem;
+  margin-inline-end: 0.5rem;
+
+  /*rtl:ignore*/
+  margin-left: 0px !important;
+
+  &:after {
+    clear: both;
+  }
+  & + label {
+    color: $label-color;
+  }
+}
+
+.form_control_search-container {
+  cursor: pointer;
+  position: relative;
+
+  &.no-cursor {
+    cursor: unset;
+  }
+}
+
+.form-control {
+  &__search {
+    position: relative;
+    padding-inline-end: 1.5rem;
+    cursor: pointer;
+    &:disabled {
+      pointer-events: none;
+      cursor: pointer;
+    }
+    &::before {
+      font-family: $icomoon-font-family !important;
+      content: $icon-searchIcon;
+    }
+    + span {
+      position: absolute;
+      inset-inline-end: 8px;
+      inset-block-start: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+.form-check-label {
+  color: $text-color !important;
+}
+
+.mx-datepicker {
+  width: 100% !important;
+  font-size: 1.2rem;
+  .mx-input {
+    // height: 28px !important;
+    padding: unset;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border-block-end: 0.1rem solid $border-color;
+    font-size: 1.2rem;
+    padding-inline-start: 0;
+
+    &:disabled {
+      background-color: transparent;
+    }
+
+    &:focus,
+    &:hover {
+      border-color: $border-color;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(161, 79, 17, 0.25);
+    }
+  }
+  .mx-icon-calendar,
+  .mx-icon-clear {
+    inset-inline-end: 8px !important;
+    left: unset;
+    right: unset;
+  }
+}
+select[disabled="disabled"] {
+  -o-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+}
+
+.p-inputtext {
+  min-height: 28px;
+  width: 100%;
+}
+
+.save-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+
+  .delete-button-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn {
+    min-width: 10rem;
+  }
+}
+
+.p-multiselect-label-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  .p-multiselect-label {
+    line-height: 1.7;
+  }
+}
+
+.p-dropdown {
+  margin-top: 0px;
+}

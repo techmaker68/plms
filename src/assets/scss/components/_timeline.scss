@@ -1,0 +1,82 @@
+.timeline {
+  padding-inline-start: 0rem;
+  &__title {
+    color: $text-color;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    // margin-block-end: 1.5rem;
+  }
+  &__forms {
+    list-style: none;
+    padding-inline-start: 0;
+    &__label {
+      width: 30%;
+      &--lg {
+        width: 45%;
+      }
+    }
+    &__default {
+      margin-inline-start: 1rem;
+      width: 45%;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      color: $text-color;
+      margin-block-end: 1rem;
+      .form-control {
+        width: 30%;
+        &[type*="date"] {
+          width: 45%;
+        }
+        & + .form-control {
+          margin-inline-start: 1rem;
+        }
+        &--lg {
+          width: 55%;
+          &[type*="date"] {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  &--vertical {
+    list-style-type: none;
+    position: relative;
+    & > li {
+      padding-inline-start: 0px;
+      position: relative;
+      &.processDone {
+        &::before {
+          background-color: $done;
+          border-color: $done;
+        }
+      }
+      &.inprogress {
+        &::before {
+          background-color: $progress;
+          border-color: $progress;
+        }
+      }
+    }
+  }
+}
+
+.custom-upload {
+  input[type="file"] {
+    display: none;
+    &::-webkit-file-upload-button {
+      display: none;
+    }
+    &::file-selector-button {
+      display: none;
+    }
+  }
+  &:hover {
+    label {
+      background-color: #dde0e3;
+      cursor: pointer;
+    }
+  }
+}

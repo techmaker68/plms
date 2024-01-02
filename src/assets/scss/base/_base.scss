@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: $primary-font;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 300;
+  background-color: $main-bg-color;
+}
+
+main {
+  flex-grow: 1;
+  transition: 0.2s all ease-in-out;
+
+  &:not(.filters-page-container) {
+    padding: $main-padding;
+  }
+
+  // box-sizing: border-box;
+  // height: calc(100vh - 6rem);
+}
+label {
+  color: $label-color;
+}
+hr {
+  margin: 2rem 0;
+  border-color: $border-color;
+  opacity: 1;
+}
+a {
+  text-decoration: none;
+}
+[data-bs-toggle="modal"] {
+  cursor: pointer;
+}
+
+.app-container {
+  min-width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  @media screen and (max-height: 1000px) {
+  }
+}

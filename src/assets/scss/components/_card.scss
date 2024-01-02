@@ -1,0 +1,13 @@
+.card {
+  box-shadow: 0px 2px 5px rgba(150, 143, 143, 0.25);
+  border: none;
+  .card-header {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+  }
+  .card-body {
+    padding: 2rem;
+  }
+}

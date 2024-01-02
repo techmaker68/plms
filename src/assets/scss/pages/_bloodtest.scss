@@ -1,0 +1,143 @@
+// Helpers
+@import "../helpers/__helpers-dir";
+
+.big {
+  font-size: 1.4rem;
+  margin-inline-end: 0.4rem;
+}
+.passport-grey {
+  .icon-passportico {
+    .path1,
+    .path2,
+    .path4,
+    .path3 {
+      &:before {
+        color: #adadad;
+      }
+    }
+  }
+}
+.action-list {
+  display: flex;
+  justify-content: space-between;
+  .link-btn {
+    span {
+      color: $primary;
+      text-transform: capitalize;
+      cursor: pointer;
+      & + span {
+        margin-inline-start: 1rem;
+      }
+    }
+  }
+}
+
+.bigCalendar {
+  span {
+    font-size: 1.2rem !important;
+  }
+}
+.custom-calendar-theme {
+  background-color: white;
+
+  .cv-wrapper,
+  .cv-wrapper {
+    div {
+      font-size: 1rem;
+    }
+  }
+  .cv-weeks {
+    background-color: transparent;
+  }
+  .cv-week {
+    min-height: 4.4rem !important;
+  }
+  .cv-item {
+    @include calendar-spans-generator();
+    border: none;
+    border-radius: 0px 0.5rem 0.5rem 0px !important;
+
+    &.toBeContinued {
+      border-radius: 0px !important;
+    }
+    &:after {
+      content: "";
+    }
+  }
+
+  .theme-default .cv-header,
+  .theme-default .cv-header-day {
+    background-color: transparent;
+  }
+  .theme-default .cv-header .periodLabel {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    justify-content: flex-end;
+  }
+  .theme-default .cv-header button {
+    background-color: transparent;
+  }
+  .theme-default .cv-header button + button {
+    border-inline-start: 0;
+  }
+
+  .batch-calendar-item-container {
+    background-color: #{$blue-color} !important;
+    &.new-batch-calendar,
+    &.collect-batch-calendar {
+      background-color: #{$primary} !important;
+    }
+
+    color: white !important;
+    padding-inline-end: 0.75rem !important;
+
+    &::before,
+    &::after {
+      content: "" !important;
+    }
+
+    .calendar-flex-batch {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      > * {
+        flex-grow: 0;
+      }
+
+      .calendar-flex-title {
+        flex-grow: 1;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.document-list {
+  tr {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+.bloodTestSubmission {
+  .letter-view {
+    width: 790px;
+    height: 1120px;
+    margin: 0 auto;
+    .iframeWrap {
+      border: 1px solid $border-color;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      height: 100%;
+    }
+  }
+}
+.modal-body {
+  .filter-list .search-option .btn {
+    padding: 0.3rem 1.5rem;
+  }
+}

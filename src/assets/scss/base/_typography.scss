@@ -1,0 +1,80 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary-font;
+  font-weight: 500;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.6rem;
+}
+p {
+  font-family: $primary-font;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: $black;
+  font-weight: 300;
+}
+a {
+  transition: ease all 0.3s;
+  color: $primary;
+  &:hover {
+    color: $secondary;
+  }
+  &:focus {
+    color: $secondary;
+  }
+  &:visited {
+    color: $primary;
+  }
+}
+strong {
+  font-weight: 500;
+}
+.sidebar-title {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: $label-color;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.popup-subtile {
+  // font-size:1.3rem;
+  // font-weight: 500;
+  color: $primary;
+  font-size: 1.4rem;
+  // text-transform: capitalize;
+  // margin: 0;
+  // border-inline-start: 0.2rem solid $primary;
+  // margin-block-end:1.5rem;
+  // padding-inline-start:0.5rem;
+}
+.sub-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: $text-color;
+  text-transform: capitalize;
+  margin: 0;
+  border-block-end: 0.1rem solid $border-color;
+  margin-block-end: 1.5rem;
+  padding-block-end: 0.5rem;
+}

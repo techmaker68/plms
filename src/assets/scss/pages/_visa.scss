@@ -1,0 +1,44 @@
+.w-35 {
+  max-width: 40%;
+}
+.visa {
+  .tab-pane {
+    p {
+      color: $label-color;
+    }
+  }
+  // .image-upload {
+  //     display: flex;
+  //     justify-content: flex-start;
+  //     align-items: center;
+  //     margin-block-end: 1rem;
+  //     img {
+  //         width: 26rem;
+  //         filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  //     }
+  // }
+  .fileView {
+    border: 1px solid $dark-mode-label-color;
+    background-color: $main-bg-color;
+    min-height: 50rem;
+    border-radius: 0.5rem;
+  }
+}
+.visadetails {
+  .image-upload {
+    width: 15rem;
+  }
+}
+.policies {
+  margin-block-start: 2rem;
+  color: $label-color;
+  p {
+    color: $label-color;
+  }
+  h5 {
+    border-block-end: 1px solid $border-color;
+    color: $primary;
+    font-size: 1.4rem;
+    margin-block-end: 1rem;
+  }
+}

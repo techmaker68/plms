@@ -1,0 +1,183 @@
+@use "sass:color";
+
+// Fonts
+$primary-font: "Noto Sans", "Roboto", sans-serif;
+$secondary-font: "Roboto", "Noto Sans", sans-serif;
+
+// Color
+$base-color: #a14f11;
+$text-color: #000000;
+$label-color: #8493a5;
+// $blue-color:#41AFA9;
+$blue-color: #11ccc1;
+$main-title-color: #414b63;
+$sidebar-color: #485c74;
+$primary: $base-color;
+$secondary: #8493a5;
+$border-color: #e0e0e0;
+$bg-color: #f2f2f2;
+$sub-menu-color: #dadada;
+$prominent-orange: #fa8937;
+$menu-hover-bg: #4d6179;
+$main-header-color: #2a3644;
+$main-bg-color: #f6f6f6;
+$dropdown-menu: #4d5f76;
+$semi-grey: #f0f0f0;
+$dark-mode: #374658;
+$dark-mode-label-color: #c4c4c4;
+$done: #42928d;
+$progress: #ff6600;
+$danger: #ff0000;
+
+// Primevue overrides
+$primaryLightColor: lighten($base-color, 50%);
+$primaryColor: $base-color;
+$primaryDarkColor: darken($base-color, 8%);
+$primaryDarkerColor: darken($base-color, 16%);
+$primaryTextColor: #fff;
+$primaryAccentBg: $prominent-orange;
+$highlightBg: color.scale($primaryColor, $lightness: 50%);
+$highlightFocusBg: $highlightBg;
+$fontFamily: $primary-font;
+
+//box-shadow
+$box-shadow: 0px 4px 20px rgba(150, 143, 143, 0.25);
+
+// Container and Grid Spacing
+$container-width: 1170px;
+$grid-space: 15px;
+
+// path
+$images-path: "../images" !default;
+$font-path: "../fonts" !default;
+
+//icons
+$icomoon-font-family: "icomoon" !default;
+
+$icon-certificate: "\e956";
+$icon-contacts: "\e957";
+$icon-search: "\e958";
+$icon-person: "\e95a";
+$icon-success: "\e95b";
+$icon-envelope: "\e959";
+$icon-testtube: "\e960";
+$icon-import: "\e955";
+$icon-edit: "\e954";
+$icon-company: "\e92d";
+$icon-windows: "\e923";
+$icon-cross: "\e924";
+$icon-check: "\e925";
+$icon-upload: "\e926";
+$icon-download: "\e927";
+$icon-excel: "\e928";
+$icon-plus: "\e929";
+$icon-plan: "\e92a";
+$icon-lock: "\e92b";
+$icon-users: "\e92c";
+$icon-passportico-path1: "\e900";
+$icon-passportico-path2: "\e901";
+$icon-passportico-path3: "\e902";
+$icon-passportico-path4: "\e903";
+$icon-passportico-path5: "\e904";
+$icon-passportico-path6: "\e905";
+$icon-envelopico-path1: "\e906";
+$icon-envelopico-path2: "\e907";
+$icon-envelopico-path3: "\e908";
+$icon-envelopico-path4: "\e909";
+$icon-envelopico-path5: "\e90a";
+$icon-certificateIico-path1: "\e90b";
+$icon-certificateIico-path2: "\e90c";
+$icon-certificateIico-path3: "\e90d";
+$icon-certificateIico-path4: "\e90e";
+$icon-certificateIico-path5: "\e90f";
+$icon-certificateIico-path6: "\e910";
+$icon-certificateIico-path7: "\e911";
+$icon-certificateIico-path8: "\e912";
+$icon-certificateIico-path9: "\e913";
+$icon-noteIcon: "\e914";
+$icon-downloadIcon: "\e915";
+$icon-cancelIcon: "\e916";
+$icon-refreshIcon: "\e917";
+$icon-notificationsIcon: "\e918";
+$icon-deleteIcon: "\e919";
+$icon-addUserIcon: "\e91a";
+$icon-sendIcon: "\e91b";
+$icon-largeEnvelop: "\e91c";
+$icon-filterIcon: "\e91d";
+$icon-closeIcon: "\e91e";
+$icon-arrowDownIcon: "\e91f";
+$icon-searchIcon: "\e920";
+$icon-pdfIcon: "\e921";
+$icon-userIcon: "\e922";
+$icon-discgraph: "\e92e";
+$icon-settings: "\e92f";
+$icon-accomodation: "\e930";
+$icon-shield: "\e931";
+$icon-textfile: "\e932";
+$icon-logout: "\e933";
+$icon-admin: "\e934";
+$icon-visacard-path1: "\e935";
+$icon-visacard-path2: "\e936";
+$icon-visacard-path3: "\e937";
+$icon-visacard-path4: "\e938";
+$icon-visacard-path5: "\e939";
+$icon-visacard-path6: "\e93a";
+$icon-badgecertificate-path1: "\e93b";
+$icon-badgecertificate-path2: "\e93c";
+$icon-badgecertificate-path3: "\e93d";
+$icon-badgecertificate-path4: "\e93e";
+$icon-badgecertificate-path5: "\e93f";
+$icon-badgecertificate-path6: "\e940";
+$icon-badgecertificate-path7: "\e941";
+$icon-badgecertificate-path8: "\e942";
+$icon-badgecertificate-path9: "\e943";
+$icon-planeSlant: "\e944";
+$icon-certificateGreen-path1: "\e945";
+$icon-certificateGreen-path2: "\e946";
+$icon-certificateGreen-path3: "\e947";
+$icon-certificateGreen-path4: "\e948";
+$icon-certificateGreen-path5: "\e949";
+$icon-certificateGreen-path6: "\e94a";
+$icon-certificateGreen-path7: "\e94b";
+$icon-testTube: "\e94c";
+$icon-warning: "\e94d";
+$icon-paperpin: "\e94e";
+$icon-attachment: "\e94f";
+$icon-HomeIcon: "\e950";
+$icon-addIcon: "\e951";
+$icon-takeoffplane: "\e952";
+$icon-landplane: "\e953";
+$icon-icon_save-path1: "\e95c";
+$icon-icon_save-path2: "\e95d";
+$icon-icon_save-path3: "\e95e";
+$icon-icon_save-path4: "\e95f";
+$icon-icon_save-path5: "\e961";
+$icon-icon_save-path6: "\e962";
+$icon-icon_save-path7: "\e963";
+$icon-icon_save-path8: "\e964";
+$icon-imageicon: "\e965";
+$icon-icon-delete-path1: "\e966";
+$icon-icon-delete-path2: "\e967";
+$icon-icon-delete-path3: "\e968";
+$icon-icon-delete-path4: "\e969";
+$icon-icon-delete-path5: "\e96a";
+$icon-icon-delete-path6: "\e96b";
+$icon-icon-delete-path7: "\e96c";
+$icon-icon-delete-path8: "\e96d";
+
+$main-padding: 16px 8px;
+
+:root {
+  --label-color: #{$label-color};
+  --semi-grey: #{$semi-grey};
+  --light-success: #45948c;
+  --bg-color: #{$bg-color};
+  --red-500: #{$danger};
+}
+
+.btn-danger {
+  --bs-btn-hover-color: white;
+  --bs-btn-color: white;
+  --bs-btn-active-color: white;
+  --bs-btn-disabled-color: white;
+}

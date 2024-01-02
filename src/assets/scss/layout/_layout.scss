@@ -1,0 +1,41 @@
+.main-content {
+  min-height: 500px;
+}
+.username h4 {
+  font-size: 1.2rem;
+}
+.astrik-req {
+  color: red;
+}
+.filter-side-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1rem;
+
+  label {
+    flex-grow: 1;
+  }
+}
+
+.filter-accordion-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.filter-accordion-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+
+  label {
+    text-align: start;
+  }
+}

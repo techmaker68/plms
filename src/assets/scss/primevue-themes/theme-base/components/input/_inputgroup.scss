@@ -1,0 +1,74 @@
+.p-inputgroup-addon {
+  background: $inputGroupBg;
+  color: $inputGroupTextColor;
+  border-block-start: $inputBorder;
+  border-inline-start: $inputBorder;
+  border-block-end: $inputBorder;
+  padding: $inputPadding;
+  min-width: $inputGroupAddOnMinWidth;
+
+  &:last-child {
+    border-inline-end: $inputBorder;
+  }
+}
+
+.p-inputgroup {
+  > .p-component,
+  > .p-inputwrapper > .p-inputtext,
+  > .p-float-label > .p-component {
+    border-radius: 0;
+    margin: 0;
+
+    + .p-inputgroup-addon {
+      border-inline-start: 0 none;
+    }
+
+    &:focus {
+      z-index: 1;
+
+      ~ label {
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.p-inputgroup-addon:first-child,
+.p-inputgroup button:first-child,
+.p-inputgroup input:first-child,
+.p-inputgroup > .p-inputwrapper:first-child,
+.p-inputgroup > .p-inputwrapper:first-child > .p-inputtext {
+  border-block-start-left-radius: $borderRadius;
+  border-block-end-left-radius: $borderRadius;
+}
+
+.p-inputgroup .p-float-label:first-child input {
+  border-block-start-left-radius: $borderRadius;
+  border-block-end-left-radius: $borderRadius;
+}
+
+.p-inputgroup-addon:last-child,
+.p-inputgroup button:last-child,
+.p-inputgroup input:last-child,
+.p-inputgroup > .p-inputwrapper:last-child,
+.p-inputgroup > .p-inputwrapper:last-child > .p-inputtext {
+  border-block-start-right-radius: $borderRadius;
+  border-block-end-right-radius: $borderRadius;
+}
+
+.p-inputgroup .p-float-label:last-child input {
+  border-block-start-right-radius: $borderRadius;
+  border-block-end-right-radius: $borderRadius;
+}
+
+.p-fluid {
+  .p-inputgroup {
+    .p-button {
+      width: auto;
+
+      &.p-button-icon-only {
+        width: $buttonIconOnlyWidth;
+      }
+    }
+  }
+}

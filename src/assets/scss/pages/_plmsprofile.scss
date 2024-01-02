@@ -1,0 +1,180 @@
+.sidebar {
+  .profile-company-name {
+    cursor: pointer;
+    margin-block-start: 1rem;
+    li {
+      strong {
+        font-size: 1rem;
+        text-transform: capitalize;
+        color: $text-color;
+        &:first-child {
+          width: 71%;
+        }
+        &:nth-child(2) {
+          width: calc(100% - 71%);
+        }
+      }
+      transition: 0.2s all ease-in-out;
+      &:first-child {
+        border-block-end: 1px solid $secondary;
+        padding: 0.5rem 1rem;
+      }
+      a {
+        display: flex;
+        flex-grow: 1;
+        padding: 0.5rem 1rem;
+        &.active {
+          background-color: #d9d9d9;
+          color: $text-color;
+        }
+      }
+      &:not(:first-child) {
+        margin-block-end: 0;
+        border-block-end: 1px solid $border-color;
+        &:hover {
+          background-color: #d9d9d9;
+          color: $text-color;
+        }
+      }
+    }
+    .activeData {
+      strong {
+        color: $text-color;
+      }
+    }
+  }
+}
+.Addpassport {
+  .row {
+    margin-block-end: 1.5rem;
+  }
+  .edit {
+    width: 2rem;
+    display: inline-block;
+    position: absolute;
+    right: 2.5rem;
+    top: 1.5rem;
+    cursor: pointer;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+.profileInfoList {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  li {
+    width: 33%;
+    margin-block-end: 1rem;
+    label {
+      font-size: 1.2rem;
+      width: 40%;
+      min-width: 40%;
+    }
+  }
+}
+.plms-profile {
+  .label-value li label,
+  .label-value li strong {
+    width: 50%;
+  }
+  h6 {
+    color: $primary;
+  }
+  // .modal-body {
+  //     padding: 2rem 5rem;
+  // }
+}
+.company-edit-icon {
+  font-size: 2.5rem;
+  text-decoration: none;
+  padding: 0;
+  span {
+    &:before {
+      color: $sidebar-color;
+    }
+  }
+}
+.import-icon {
+  font-size: 1.75rem;
+  text-decoration: none;
+  padding-block-start: 5px;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+  span {
+    &:before {
+      color: $sidebar-color;
+    }
+  }
+}
+.personnel-info {
+  .row {
+    [class*="col-"] {
+      margin-block-end: 1.2rem;
+      padding: 0 4rem;
+    }
+  }
+}
+.overlay {
+  background-color: rgba(190, 187, 187, 0.932);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-profile {
+  width: 50%;
+  background-color: white;
+  // position: absolute;
+  // top:0;
+  // transform: translate(50%, 50%);
+  padding-block-end: 20px;
+  .delete-pax {
+    font-weight: 600;
+    padding: 15px 30px;
+    border-block-end: 2px solid gray;
+  }
+  .pax-text {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+  }
+}
+
+.pax-profile-section {
+  flex-grow: 1;
+
+  table {
+    width: 100%;
+
+    th {
+      border-bottom: 1px dashed $label-color;
+    }
+
+    tr {
+      &:first-of-type {
+        font-weight: bold;
+      }
+    }
+
+    td {
+      &:nth-child(2) {
+        color: #0e6eb8;
+      }
+    }
+  }
+}
+
+.pax-profile-tab-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.5rem;
+}

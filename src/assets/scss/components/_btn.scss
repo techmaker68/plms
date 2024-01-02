@@ -1,0 +1,164 @@
+.btn {
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  & + .btn {
+    margin-inline-start: 1rem;
+  }
+  &.btn-primary {
+    color: $white;
+  }
+  &.btn-outline-primary {
+    .icon-passportico {
+      .path1,
+      .path2,
+      .path4,
+      .path3 {
+        &:before {
+          color: $primary;
+        }
+      }
+      .path5,
+      .path6 {
+        &::before {
+          color: $border-color;
+        }
+      }
+    }
+    span {
+      &:before {
+        color: $primary;
+      }
+    }
+    &:hover {
+      color: $white;
+      span {
+        &::before {
+          color: $white;
+        }
+        &.icon-passportico {
+          .path1,
+          .path2,
+          .path4,
+          .path3 {
+            &:before {
+              color: $white;
+            }
+          }
+          .path5,
+          .path6 {
+            &::before {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.btn-outline-secondary {
+    &:hover {
+      color: $white;
+    }
+  }
+  &.btn-secondary {
+    color: $white;
+  }
+  &.btn-blue {
+    background-color: $blue-color;
+    border-color: $blue-color;
+    color: $white;
+    &:not(.btn-small) {
+      min-width: 110px;
+    }
+    justify-content: center;
+    &:hover {
+      background: darken($blue-color, 10%);
+      border-color: darken($blue-color, 10%);
+    }
+  }
+  .svg-icon {
+    display: inline-block;
+    width: 1.8rem;
+    stroke: $secondary;
+    height: 1.6rem;
+  }
+  &:hover {
+    i {
+      &::before {
+        color: $white;
+      }
+    }
+    .svg-icon {
+      .path {
+        stroke: $white;
+      }
+    }
+  }
+  &.reminder {
+    .svg-icon {
+      .path {
+        fill: $secondary;
+      }
+    }
+    &:hover {
+      .svg-icon {
+        .path {
+          fill: $black;
+        }
+      }
+    }
+  }
+  &.reminder-btn {
+    i {
+      &::before {
+        color: $white;
+      }
+    }
+    .svg-icon {
+      stroke: none;
+    }
+  }
+  &.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &.text-primary {
+    padding: 0;
+    span {
+      &::before {
+        color: $primary;
+      }
+    }
+  }
+  &.btn-small {
+    padding: 0.1rem 1.2rem;
+    font-size: 1.1rem;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $gray-500;
+    border-color: $gray-500;
+  }
+  &-link.btn-icon {
+    text-decoration: none;
+    .icon-downloadIcon {
+      &:before {
+        color: $sidebar-color;
+      }
+    }
+  }
+}
+
+.btn-icon {
+  .btn-fa-icon {
+    font-size: 1.5rem;
+  }
+}
+
+.btn-outline-primary:hover {
+  color: white !important;
+}
+
+.btn.text-primary {
+  padding: 0.5rem 1.5rem;
+}

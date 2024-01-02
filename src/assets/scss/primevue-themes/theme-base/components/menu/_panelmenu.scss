@@ -1,0 +1,153 @@
+.p-panelmenu {
+  .p-panelmenu-header {
+    outline: 0 none;
+
+    .p-panelmenu-header-content {
+      border: $accordionHeaderBorder;
+      color: $accordionHeaderTextColor;
+      background: $accordionHeaderBg;
+      border-radius: $borderRadius;
+      transition: $listItemTransition;
+
+      .p-panelmenu-header-action {
+        color: $accordionHeaderTextColor;
+        padding: $accordionHeaderPadding;
+        font-weight: $accordionHeaderFontWeight;
+
+        .p-submenu-icon {
+          margin-inline-end: $inlineSpacing;
+        }
+
+        .p-menuitem-icon {
+          margin-inline-end: $inlineSpacing;
+        }
+      }
+    }
+
+    &:not(.p-disabled) {
+      &:focus {
+        .p-panelmenu-header-content {
+          @include focused-inset();
+        }
+      }
+    }
+
+    &:not(.p-highlight):not(.p-disabled):hover {
+      .p-panelmenu-header-content {
+        background: $accordionHeaderHoverBg;
+        border-color: $accordionHeaderHoverBorderColor;
+        color: $accordionHeaderTextHoverColor;
+      }
+    }
+
+    &:not(.p-disabled).p-highlight {
+      .p-panelmenu-header-content {
+        background: $accordionHeaderActiveBg;
+        border-color: $accordionHeaderActiveBorderColor;
+        color: $accordionHeaderTextActiveColor;
+        border-block-end-right-radius: 0;
+        border-block-end-left-radius: 0;
+        margin-block-end: 0;
+      }
+
+      &:hover {
+        .p-panelmenu-header-content {
+          border-color: $accordionHeaderActiveHoverBorderColor;
+          background: $accordionHeaderActiveHoverBg;
+          color: $accordionHeaderTextActiveHoverColor;
+        }
+      }
+    }
+  }
+
+  .p-panelmenu-content {
+    padding: $verticalMenuPadding;
+    border: $accordionContentBorder;
+    background: $accordionContentBg;
+    color: $accordionContentTextColor;
+    border-block-start: 0;
+    border-block-start-right-radius: 0;
+    border-block-start-left-radius: 0;
+    border-block-end-right-radius: $borderRadius;
+    border-block-end-left-radius: $borderRadius;
+
+    .p-panelmenu-root-list {
+      outline: 0 none;
+    }
+
+    .p-menuitem {
+      @include menuitem();
+
+      .p-menuitem-content {
+        .p-menuitem-link {
+          .p-submenu-icon {
+            margin-inline-end: $inlineSpacing;
+          }
+        }
+      }
+    }
+
+    .p-menuitem-separator {
+      border-block-start: $divider;
+      margin: $menuSeparatorMargin;
+    }
+
+    .p-submenu-list:not(.p-panelmenu-root-list) {
+      padding: $treeNodeChildrenPadding;
+    }
+  }
+
+  .p-panelmenu-panel {
+    margin-block-end: $accordionSpacing;
+
+    @if $accordionSpacing == 0 {
+      .p-panelmenu-header {
+        .p-panelmenu-header-content {
+          border-radius: 0;
+        }
+      }
+
+      .p-panelmenu-content {
+        border-radius: 0;
+      }
+
+      &:not(:first-child) {
+        .p-panelmenu-header {
+          .p-panelmenu-header-content {
+            border-block-start: 0 none;
+          }
+
+          &:not(.p-highlight):not(.p-disabled):hover,
+          &:not(.p-disabled).p-highlight:hover {
+            .p-panelmenu-header-content {
+              border-block-start: 0 none;
+            }
+          }
+        }
+      }
+
+      &:first-child {
+        .p-panelmenu-header {
+          .p-panelmenu-header-content {
+            border-block-start-right-radius: $borderRadius;
+            border-block-start-left-radius: $borderRadius;
+          }
+        }
+      }
+
+      &:last-child {
+        .p-panelmenu-header:not(.p-highlight) {
+          .p-panelmenu-header-content {
+            border-block-end-right-radius: $borderRadius;
+            border-block-end-left-radius: $borderRadius;
+          }
+        }
+
+        .p-panelmenu-content {
+          border-block-end-right-radius: $borderRadius;
+          border-block-end-left-radius: $borderRadius;
+        }
+      }
+    }
+  }
+}

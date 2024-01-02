@@ -1,0 +1,30 @@
+image: node:19
+
+pipelines:
+  default:
+    - step:
+        name: Install and Test
+        script:
+          - npm install
+          - npm run build-dev
+          - ls -la
+  branches:
+    staging:
+      - step:
+          name: Install and Test
+          script:
+            - npm install
+            - npm run build-dev
+            - ls -la
+          artifacts:
+            - dist/**
+      - step:
+          name: Deploy to Staging
+          deployment: staging
+          script:
+            - pipe: atlassian/scp-deploy:0.3.3
+              variables:
+                USER: "$USER"
+                SERVER: "$SERVER"
+                REMOTE_PATH: "$REMOTE_PATH"
+                LOCAL_PATH: "dist/*"

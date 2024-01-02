@@ -1,0 +1,20 @@
+// Import Vendor files
+@import "bootstrap/scss/bootstrap-utilities.scss";
+@import "bootstrap/scss/bootstrap-grid.scss";
+@import "bootstrap/scss/bootstrap-reboot.scss";
+@import "bootstrap/scss/bootstrap.scss";
+@import "primevue/resources/themes/lara-light-indigo/theme.css";
+
+// start ignore
+@import "../helpers/begin-rtl-ignore";
+
+@import "../../../../node_modules/vue3-easy-data-table/dist/style";
+@import "../../../../node_modules/vue-simple-calendar/dist/style";
+@import "../../../../node_modules/vue-simple-calendar/dist/css/default";
+
+@import "../helpers/end-rtl-ignore";
+// end ignore
+
+@import "@kouts/vue-modal/dist/vue-modal.css";
+@import "vue-toastification/dist/index.css";
+@import "vue-datepicker-next/index.css";
